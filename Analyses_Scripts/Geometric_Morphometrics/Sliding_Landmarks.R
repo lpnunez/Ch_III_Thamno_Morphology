@@ -22,7 +22,7 @@ Male_coords <- readland.tps("Data/Male_Thamnophiini_Ana_Curves_UCE_CatNum.tps",s
 All_coords <- abind(Female_coords, Male_coords)
 
 # Mirror Data
-bilat.landmarks <- cbind(which(meta_lms$Position=="l"),which(meta_lms$Position=="r"))
+bilat.landmarks <- cbind(which(meta_lms_full$Position=="l"),which(meta_lms_full$Position=="r"))
 
 bilat.landmarks <- bilat.landmarks[c(1:70),]
 
