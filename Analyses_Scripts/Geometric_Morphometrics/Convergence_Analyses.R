@@ -19,13 +19,13 @@ Thamno_Tree <- drop.tip(read.tree("Data/Thamno_WGS1_82_ALRT_CCR_PLC.tre"), c("Na
 Thamno_Tree <- force.ultrametric(Thamno_Tree)
 
 # Read in PC Scores
-paca_skull <- as.matrix(read.csv("Data/Skull_PACA_PC.csv", row.names = 1))[,1:4]
-paca_snout <- as.matrix(read.csv("Data/Snout_PACA_PC.csv", row.names = 1))[,1:4]
-paca_braincase <- as.matrix(read.csv("Data/Braincase_PACA_PC.csv", row.names = 1))[,1:4]
-paca_maxilla <- as.matrix(read.csv("Data/Maxilla_PACA_PC.csv", row.names = 1))[,1:4]
-paca_palatoptery <- as.matrix(read.csv("Data/Palatopterygoid_Arch_PACA_PC.csv", row.names = 1))[,1:4]
-paca_mandible <- as.matrix(read.csv("Data/Mandible_PACA_PC.csv", row.names = 1))[,1:4]
-paca_suspensorium <- as.matrix(read.csv("Data/Suspensorium_PACA_PC.csv", row.names = 1))[,1:4]
+paca_skull <- as.matrix(read.csv("Results/Skull_PACA_PC.csv", row.names = 1))[,1:4]
+paca_snout <- as.matrix(read.csv("Results/Snout_PACA_PC.csv", row.names = 1))[,1:4]
+paca_braincase <- as.matrix(read.csv("Results/Braincase_PACA_PC.csv", row.names = 1))[,1:4]
+paca_maxilla <- as.matrix(read.csv("Results/Maxilla_PACA_PC.csv", row.names = 1))[,1:4]
+paca_palatoptery <- as.matrix(read.csv("Results/Palatopterygoid_Arch_PACA_PC.csv", row.names = 1))[,1:4]
+paca_mandible <- as.matrix(read.csv("Results/Mandible_PACA_PC.csv", row.names = 1))[,1:4]
+paca_suspensorium <- as.matrix(read.csv("Results/Suspensorium_PACA_PC.csv", row.names = 1))[,1:4]
 
 # Read in Trait Data for Convergence Analyses
 traits <- read.csv("Data/All_Thamno_Traits.csv")
