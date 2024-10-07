@@ -12,13 +12,13 @@ library(abind)
 setwd("~/Ch_III_Thamno_Morphology/")
 
 source("Analyses_Scripts/Supplementary_Functions/Matched_Local_Superimpositions.R")
-meta_lms <- read.csv("Data/Landmarks_Bilat.csv")
+meta_lms_full <- read.csv("Data/Landmarks_Bilat_Curves.csv")
 Thamno_Tree <- drop.tip(read.tree("Data/Thamno_WGS1_82_ALRT_CCR_PLC.tre"), c("Natrix_natrix","Thamnophis_fulvus","Thamnophis_sirtalis_X_radix"))
 Thamno_Tree <- force.ultrametric(Thamno_Tree)
 load("Data/slid_coords.RData")
 
 # Use Local Superimposition for Each Partition
-lgpa.partition <- meta_lms$full_model #Full Skull
+lgpa.partition <- meta_lms_full$full_model #Full Skull
 test <- local.gpa(coords = slid_coords$dataslide, partition = lgpa.partition) #Full Skull
 
 # Read in Info on specimens and Taxa
