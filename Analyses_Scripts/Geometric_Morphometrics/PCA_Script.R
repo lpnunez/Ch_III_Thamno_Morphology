@@ -18,7 +18,7 @@ Thamno_Tree <- force.ultrametric(Thamno_Tree)
 load("Data/slid_coords.RData")
 
 # Use Local Superimposition for Each Partition
-lgpa.partition <- meta_lms_full$full_model #Full Skull
+lgpa.partition <- meta_lms$full_model #Full Skull
 test <- local.gpa(coords = slid_coords$dataslide, partition = lgpa.partition) #Full Skull
 
 # Read in Info on specimens and Taxa
