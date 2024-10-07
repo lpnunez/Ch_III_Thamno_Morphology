@@ -14,8 +14,6 @@ setwd("~/Ch_III_Thamno_Morphology/")
 
 source("Analyses_Scripts/Supplementary_Functions/read.markups.json.R")
 meta_lms <- read.csv("Data/Landmarks_Bilat.csv")
-meta_lms_left <- read.csv("Data/Landmarks.csv")
-meta_lms_full <- read.csv("Data/Landmarks_Bilat_Curves.csv")
 lms_names <- meta_lms$Name
 
 Female_coords <- readland.tps("Data/Female_Thamnophiini_Ana_Curves_UCE_CatNum.tps",specID = c("ID"))
