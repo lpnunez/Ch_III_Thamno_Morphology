@@ -13,8 +13,9 @@ library(abind)
 setwd("~/Ch_III_Thamno_Morphology/")
 
 source("Analyses_Scripts/Supplementary_Functions/read.markups.json.R")
-meta_lms <- read.csv("Data/Landmarks_Bilat.csv")
-lms_names <- meta_lms$Name
+meta_lms_full <- read.csv("Data/Landmarks_Bilat_Curves.csv")
+
+lms_names <- meta_lms_full$Name
 
 Female_coords <- readland.tps("Data/Female_Thamnophiini_Ana_Curves_UCE_CatNum.tps",specID = c("ID"))
 Male_coords <- readland.tps("Data/Male_Thamnophiini_Ana_Curves_UCE_CatNum.tps",specID = c("ID"))
@@ -25,7 +26,7 @@ bilat.landmarks <- cbind(which(meta_lms$Position=="l"),which(meta_lms$Position==
 
 bilat.landmarks <- bilat.landmarks[c(1:70),]
 
-midline<- which(meta_lms$Position=="m")#a list of which landmarks fall on the midline
+midline<- which(meta_lms_full$Position=="m")#a list of which landmarks fall on the midline
 
 all.lm.present <- c(1:922)
 ana.lm.present <- c(1:152)
@@ -36,7 +37,7 @@ num.missing<-(length(leftside)-length(bilat.landmarks[,2]))
 blanks<-c((dim(All_coords)[1]+1):(dim(All_coords)[1]+num.missing))         
 rightside<-c(bilat.landmarks[,2],blanks)
 
-module_defs_left <- meta_lms %>% filter(., Position != "r")
+module_defs_left <- meta_lms_full %>% filter(., Position != "r")
 
 add_col_or_row = function(x, n = 1, add_col = T, fill = 0)
 {
