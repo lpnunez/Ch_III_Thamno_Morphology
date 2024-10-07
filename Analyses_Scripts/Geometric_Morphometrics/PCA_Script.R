@@ -12,7 +12,7 @@ library(abind)
 setwd("~/Ch_III_Thamno_Morphology/")
 
 source("Analyses_Scripts/Supplementary_Functions/Matched_Local_Superimpositions.R")
-meta_lms <- read.csv("Landmarks_Bilat.csv")
+meta_lms <- read.csv("Data/Landmarks_Bilat.csv")
 Thamno_Tree <- drop.tip(read.tree("Data/Thamno_WGS1_82_ALRT_CCR_PLC.tre"), c("Natrix_natrix","Thamnophis_fulvus","Thamnophis_sirtalis_X_radix"))
 Thamno_Tree <- force.ultrametric(Thamno_Tree)
 load("Data/slid_coords.RData")
