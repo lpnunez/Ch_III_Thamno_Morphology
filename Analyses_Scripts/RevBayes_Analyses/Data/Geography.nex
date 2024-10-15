@@ -1,0 +1,59 @@
+#NEXUS
+
+BEGIN DATA;
+	DIMENSIONS NTAX=51 NCHAR=1;
+	FORMAT DATATYPE=STANDARD SYMBOLS="01" MISSING=? GAP=-;
+MATRIX
+Clonophis_kirtlandii                0
+Liodytes_alleni                     0
+Liodytes_rigida                     0
+Nerodia_clarkii                     0
+Nerodia_cyclopion                   0
+Nerodia_erythrogaster               0
+Nerodia_fasciata                    0
+Nerodia_floridana                   0
+Nerodia_paucimaculata               0
+Nerodia_rhombifer                   0
+Nerodia_sipedon                     0
+Nerodia_taxispilota                 0
+Regina_grahamii                     0
+Regina_septemvittata                0
+Seminatrix_pygaea                   0
+Storeria_dekayi                     0
+Storeria_occipitomaculata           0
+Storeria_storerioides               1
+Storeria_victa                      0
+Thamnophis_atratus                  1
+Thamnophis_brachystoma              0
+Thamnophis_butleri                  0
+Thamnophis_chrysocephalus           1
+Thamnophis_couchii                  1
+Thamnophis_cyrtopsis                1
+Thamnophis_elegans                  1
+Thamnophis_eques                    1
+Thamnophis_exsul                    1
+Thamnophis_foxi                     1
+Thamnophis_gigas                    1
+Thamnophis_godmani                  1
+Thamnophis_hammondii                1
+Thamnophis_marcianus                1
+Thamnophis_melanogaster             1
+Thamnophis_nigronuchalis            1
+Thamnophis_ordinoides               1
+Thamnophis_proximus                 0
+Thamnophis_pulchrilatus             1
+Thamnophis_radix                    0
+Thamnophis_rufipunctatus            1
+Thamnophis_sauritus                 0
+Thamnophis_scalaris                 1
+Thamnophis_scaliger                 1
+Thamnophis_sirtalis_East            0
+Thamnophis_sirtalis_FL              0
+Thamnophis_sirtalis_West            1
+Thamnophis_sumichrasti              1
+Thamnophis_validus                  1
+Tropidoclonion_lineatum             0
+Virginia_striatula                  0
+Virginia_valeriae                   0
+;
+END;
