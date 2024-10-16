@@ -1,0 +1,115 @@
+#NEXUS
+[R-package APE, Wed Nov 16 11:04:07 2022]
+
+BEGIN TAXA;
+	DIMENSIONS NTAX = 51;
+	TAXLABELS
+		Nerodia_clarkii
+		Nerodia_fasciata
+		Nerodia_sipedon
+		Nerodia_paucimaculata
+		Nerodia_erythrogaster
+		Nerodia_rhombifer
+		Nerodia_taxispilota
+		Nerodia_cyclopion
+		Nerodia_floridana
+		Regina_grahamii
+		Regina_septemvittata
+		Tropidoclonion_lineatum
+		Clonophis_kirtlandii
+		Liodytes_alleni
+		Liodytes_rigida
+		Seminatrix_pygaea
+		Virginia_striatula
+		Virginia_valeriae
+		Storeria_dekayi
+		Storeria_victa
+		Storeria_occipitomaculata
+		Storeria_storerioides
+		Thamnophis_atratus
+		Thamnophis_gigas
+		Thamnophis_ordinoides
+		Thamnophis_couchii
+		Thamnophis_hammondii
+		Thamnophis_elegans
+		Thamnophis_brachystoma
+		Thamnophis_butleri
+		Thamnophis_radix
+		Thamnophis_marcianus
+		Thamnophis_eques
+		Thamnophis_proximus
+		Thamnophis_sauritus
+		Thamnophis_sirtalis_East
+		Thamnophis_sirtalis_West
+		Thamnophis_sirtalis_FL
+		Thamnophis_cyrtopsis
+		Thamnophis_pulchrilatus
+		Thamnophis_chrysocephalus
+		Thamnophis_nigronuchalis
+		Thamnophis_rufipunctatus
+		Thamnophis_validus
+		Thamnophis_exsul
+		Thamnophis_scalaris
+		Thamnophis_scaliger
+		Thamnophis_godmani
+		Thamnophis_sumichrasti
+		Thamnophis_melanogaster
+		Thamnophis_foxi
+	;
+END;
+BEGIN TREES;
+	TRANSLATE
+		1	Nerodia_clarkii,
+		2	Nerodia_fasciata,
+		3	Nerodia_sipedon,
+		4	Nerodia_paucimaculata,
+		5	Nerodia_erythrogaster,
+		6	Nerodia_rhombifer,
+		7	Nerodia_taxispilota,
+		8	Nerodia_cyclopion,
+		9	Nerodia_floridana,
+		10	Regina_grahamii,
+		11	Regina_septemvittata,
+		12	Tropidoclonion_lineatum,
+		13	Clonophis_kirtlandii,
+		14	Liodytes_alleni,
+		15	Liodytes_rigida,
+		16	Seminatrix_pygaea,
+		17	Virginia_striatula,
+		18	Virginia_valeriae,
+		19	Storeria_dekayi,
+		20	Storeria_victa,
+		21	Storeria_occipitomaculata,
+		22	Storeria_storerioides,
+		23	Thamnophis_atratus,
+		24	Thamnophis_gigas,
+		25	Thamnophis_ordinoides,
+		26	Thamnophis_couchii,
+		27	Thamnophis_hammondii,
+		28	Thamnophis_elegans,
+		29	Thamnophis_brachystoma,
+		30	Thamnophis_butleri,
+		31	Thamnophis_radix,
+		32	Thamnophis_marcianus,
+		33	Thamnophis_eques,
+		34	Thamnophis_proximus,
+		35	Thamnophis_sauritus,
+		36	Thamnophis_sirtalis_East,
+		37	Thamnophis_sirtalis_West,
+		38	Thamnophis_sirtalis_FL,
+		39	Thamnophis_cyrtopsis,
+		40	Thamnophis_pulchrilatus,
+		41	Thamnophis_chrysocephalus,
+		42	Thamnophis_nigronuchalis,
+		43	Thamnophis_rufipunctatus,
+		44	Thamnophis_validus,
+		45	Thamnophis_exsul,
+		46	Thamnophis_scalaris,
+		47	Thamnophis_scaliger,
+		48	Thamnophis_godmani,
+		49	Thamnophis_sumichrasti,
+		50	Thamnophis_melanogaster,
+		51	Thamnophis_foxi
+	;
+	TREE * UNTITLED = [&R] (((((((((1:2.05127,2:2.05127)'0.91/100/100':4.092474,3:6.143744)'1/100/100':0.790949,4:6.934693)'1/100/100':2.491701,5:9.426393)'1/100/100':2.570199,(6:5.389749,7:5.389749)'1/100/100':6.606843)'0.99/100/100':3.003408,(8:6.47341,9:6.47341)'1/100/100':8.52659)'1/100/100':0.468595,(10:5.882017,11:5.882017)'0.96/100/100':9.586578)'0.61/100/100':3.347714,12:18.816309)'1/100/100':2.745694,(((13:5.790158,((14:1.751042,15:1.751043)'1/100/100':2.76935,16:4.520393)'1/100/100':1.269765)'1/100/100':0.857457,(17:1.995115,18:1.995116)'0.62/100/100':4.652499)'1/100/100':11.174266,(((19:0.967153,20:0.967153)'1/100/100':0.89376,(21:1.603622,22:1.603621)'1/100/100':0.257291)'1/100/100':15.421542,((((((((23:3.799563,24:3.799563)'1/100/100':0.937198,25:4.736762)'1/100/100':1.140666,(26:3.030118,27:3.030118)'1/100/100':2.847309)'1/100/100':1.581452,28:7.458879)'1/100/100':3.927304,(((29:3.561905,30:3.561905)'1/100/100':2.481523,31:6.043428)'1/100/100':0.754899,32:6.798327)'0.98/100/100':4.587856)'0.56/100/100':0.705907,33:12.09209)'1/100/100':4.498741,((34:13.973989,35:13.973988)'1/100/100':2.441927,((36:8.024076,37:8.024076)'1/100/100':4.535232,38:12.559308)'1/100/100':3.856608)'1/100/100':0.174915)'1/100/100':0.222849,((39:6.64195,40:6.641949)'1/100/100':5.873751,(41:7.72383,(((42:3.070099,43:3.070099)'1/100/100':2.138486,44:5.208585)'0.97/100/100':0.462027,(((((45:2.946947,(46:1.846843,47:1.846843)'1/100/100':1.100103)'1/100/100':0.841632,48:3.788579)'1/100/100':0.344624,49:4.133203)'1/100/100':0.847299,50:4.980502)'1/100/100':0.48508,51:5.465583)'0.71/100/100':0.205029)'1/100/100':2.053218)'1/100/100':4.79187)'1/100/100':4.297979)'1/100/100':0.468775)'0.95/100/100':0.539424)'0.59/100/100':3.740123);
+END;
