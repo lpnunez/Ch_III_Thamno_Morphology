@@ -15,20 +15,20 @@ library(RRphylo)
 setwd("~/Ch_III_Thamno_Morphology/")
 
 # Read in tree
-Thamno_Tree <- drop.tip(read.tree("Data/Thamno_WGS1_82_ALRT_CCR_PLC.tre"), c("Natrix_natrix","Thamnophis_fulvus","Thamnophis_sirtalis_X_radix"))
+Thamno_Tree <- drop.tip(read.tree("Geometric_Morphometrics/Data/Thamno_WGS1_82_ALRT_CCR_PLC.tre"), c("Natrix_natrix","Thamnophis_fulvus","Thamnophis_sirtalis_X_radix"))
 Thamno_Tree <- force.ultrametric(Thamno_Tree)
 
 # Read in PC Scores
-paca_skull <- as.matrix(read.csv("Results/Skull_PACA_PC.csv", row.names = 1))[,1:4]
-paca_snout <- as.matrix(read.csv("Results/Snout_PACA_PC.csv", row.names = 1))[,1:4]
-paca_braincase <- as.matrix(read.csv("Results/Braincase_PACA_PC.csv", row.names = 1))[,1:4]
-paca_maxilla <- as.matrix(read.csv("Results/Maxilla_PACA_PC.csv", row.names = 1))[,1:4]
-paca_palatoptery <- as.matrix(read.csv("Results/Palatopterygoid_Arch_PACA_PC.csv", row.names = 1))[,1:4]
-paca_mandible <- as.matrix(read.csv("Results/Mandible_PACA_PC.csv", row.names = 1))[,1:4]
-paca_suspensorium <- as.matrix(read.csv("Results/Suspensorium_PACA_PC.csv", row.names = 1))[,1:4]
+paca_skull <- as.matrix(read.csv("Geometric_Morphometrics/Results/Skull_PACA_PC.csv", row.names = 1))[,1:4]
+paca_snout <- as.matrix(read.csv("Geometric_Morphometrics/Results/Snout_PACA_PC.csv", row.names = 1))[,1:4]
+paca_braincase <- as.matrix(read.csv("Geometric_Morphometrics/Results/Braincase_PACA_PC.csv", row.names = 1))[,1:4]
+paca_maxilla <- as.matrix(read.csv("Geometric_Morphometrics/Results/Maxilla_PACA_PC.csv", row.names = 1))[,1:4]
+paca_palatoptery <- as.matrix(read.csv("Geometric_Morphometrics/Results/Palatopterygoid_Arch_PACA_PC.csv", row.names = 1))[,1:4]
+paca_mandible <- as.matrix(read.csv("Geometric_Morphometrics/Results/Mandible_PACA_PC.csv", row.names = 1))[,1:4]
+paca_suspensorium <- as.matrix(read.csv("Geometric_Morphometrics/Results/Suspensorium_PACA_PC.csv", row.names = 1))[,1:4]
 
 # Read in Trait Data for Convergence Analyses
-traits <- read.csv("Data/All_Thamno_Traits.csv")
+traits <- read.csv("Geometric_Morphometrics/Data/All_Thamno_Traits.csv")
 Thamno <- as.treedata.table(Thamno_Tree, traits, name_column = "Name_in_Tree")
 
 # Extract Trait Data from treedata.table
