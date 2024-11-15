@@ -15,7 +15,7 @@ library(RRphylo)
 setwd("~/Ch_III_Thamno_Morphology/")
 
 # Read in tree
-Thamno_Tree <- drop.tip(read.tree("Geometric_Morphometrics/Data/Thamno_WGS1_82_ALRT_CCR_PLC.tre"), c("Natrix_natrix","Thamnophis_fulvus","Thamnophis_sirtalis_X_radix"))
+Thamno_Tree <- drop.tip(read.tree("Geometric_Morphometrics/Data/Thamno_Morphology_Tree.tre"), c("Natrix_natrix","Thamnophis_sirtalis_X_radix"))
 Thamno_Tree <- force.ultrametric(Thamno_Tree)
 
 # Read in PC Scores
