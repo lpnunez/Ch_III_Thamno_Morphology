@@ -16,18 +16,18 @@
 character <- 1
 
 ### Read in the tree
-T <- readTrees("RevBayes_Analyses/Data/Thamnophiini_UCE_51_Taxa.nex")[1]
+T <- readTrees("Data/Thamnophiini_UCE_51_Taxa.nex")[1]
 ntips <- T.ntips()
 nbranches <- 2 * ntips - 2
 
 ### Read in the continuous-character data
-cont <- readContinuousCharacterData("RevBayes_Analyses/Data/Snout_PACA.nex")
+cont <- readContinuousCharacterData("Data/Snout_PACA.nex")
 #cont.excludeAll()
 #cont.includeCharacter(character)
 nchar <- cont.nchar()
 
 ### Read in the discrete-character data
-disc <- readDiscreteCharacterData("RevBayes_Analyses/Data/Habitat.nex")
+disc <- readDiscreteCharacterData("Data/Habitat.nex")
 num_disc_states <- disc.getStateDescriptions().size()
 
 # Create some vector for the moves and monitors of this analysis
