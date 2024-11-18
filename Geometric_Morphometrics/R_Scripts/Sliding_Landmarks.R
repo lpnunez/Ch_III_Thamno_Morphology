@@ -17,9 +17,7 @@ meta_lms_full <- read.csv("Geometric_Morphometrics/Data/Landmarks_Bilat_Curves.c
 
 lms_names <- meta_lms_full$Name
 
-Female_coords <- readland.tps("Geometric_Morphometrics/Data/Female_Thamnophiini_Ana_Curves_UCE_CatNum.tps",specID = c("ID"))
-Male_coords <- readland.tps("Geometric_Morphometrics/Data/Male_Thamnophiini_Ana_Curves_UCE_CatNum.tps",specID = c("ID"))
-All_coords <- abind(Female_coords, Male_coords)
+All_coords <- readland.tps("Geometric_Morphometrics/Data/All_Thamnophiini_Ana_Curves_UCE_CatNum.tps",specID = c("ID"))
 
 # Mirror Data
 bilat.landmarks <- cbind(which(meta_lms_full$Position=="l"),which(meta_lms_full$Position=="r"))
